@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FIRE ARENA Admin</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <meta
+      name="description"
+      content="Private FIRE ARENA owner dashboard for tournament, payment, room, and player management."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body data-page="admin" class="admin-mode">
+    <header class="site-header admin-site-header">
+      <a class="brand" href="index.html#home" aria-label="Open public website">
+        <span class="brand-mark"><i data-lucide="crosshair"></i></span>
+        <span class="brand-name" data-bind="brandName">FIRE ARENA</span>
+      </a>
+      <div class="admin-entry-actions">
+        <a class="btn btn-light" href="index.html#home">
+          <i data-lucide="external-link"></i>
+          Public Website
+        </a>
+      </div>
+    </header>
+
+    <section id="admin" class="app-view page-shell">
+      <div class="view-header">
+        <div>
+          <p class="eyebrow">Private Owner Area</p>
+          <h1>Admin Panel</h1>
+        </div>
+        <a class="btn btn-light" href="index.html#home"><i data-lucide="arrow-left"></i> Public Site</a>
+      </div>
+      <div data-admin-root></div>
+    </section>
+
+    <footer class="site-footer admin-site-footer">
+      <div class="page-shell footer-bottom">
+        <span>FIRE ARENA admin is separate from the public player website.</span>
+        <span>PIN protected owner tools.</span>
+      </div>
+    </footer>
+
+    <div class="toast-stack" data-toast-stack aria-live="polite"></div>
+  </body>
+</html>
